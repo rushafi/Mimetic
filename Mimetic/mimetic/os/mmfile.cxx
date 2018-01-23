@@ -56,12 +56,12 @@ bool MMFile::open(int mode)
 
 bool MMFile::map()
 {
-    m_beg = (char*) mmap(0, m_st.st_size, PROT_READ, MAP_SHARED,m_fd,0);
+    m_beg = (char*) mmap(0, (size_t)m_st.st_size, PROT_READ, MAP_SHARED,m_fd,0);
     if(m_beg > (void *)0)
     {
         m_end = m_beg + m_st.st_size;
         #if HAVE_MADVISE
-        madvise(m_beg, m_st.st_size, MADV_SEQUENTIAL);
+        madvise(m_beg, (size_t)m_st.st_size, MADV_SEQUENTIAL);
         #endif
         return true;
     }
@@ -71,7 +71,7 @@ bool MMFile::map()
 MMFile::~MMFile()
 {
     if(m_beg)
-        munmap(m_beg, m_st.st_size);
+        munmap(m_beg, (size_t)m_st.st_size);
     if(m_fd)
         close();
 }
@@ -102,9 +102,9 @@ uint MMFile::read(char* buf, int bufsz)
     int r;
     do
     {
-        r = ::read(m_fd, buf, bufsz);
+        r = (int)::read(m_fd, buf, bufsz);
     } while(r < 0 && errno == EINTR);
-    return r;
+    return (uint)r;
 }
 
 MMFile::operator bool() const

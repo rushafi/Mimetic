@@ -17,8 +17,7 @@ using namespace std;
 ostream& operator<<(ostream& os, const Message& m)
 {
     // header field
-    Rfc822Header::const_iterator hbit, heit;
-    hbit = m.header().begin(), heit = m.header().end();
+    Rfc822Header::const_iterator hbit = m.header().begin(), heit = m.header().end();
     for(; hbit != heit; ++hbit)
         os << *hbit;
     // empty line, header/body separator
