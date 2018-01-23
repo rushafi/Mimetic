@@ -7,8 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		506EE8792015FA180059F3E5 /* Mimetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8782015FA180059F3E5 /* Mimetic.m */; };
+		506EE8792015FA180059F3E5 /* Mimetic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8782015FA180059F3E5 /* Mimetic.mm */; };
 		506EE87A2015FA180059F3E5 /* Mimetic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 506EE8772015FA180059F3E5 /* Mimetic.h */; };
+		506EE8902015FDE80059F3E5 /* base64.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88C2015FDE70059F3E5 /* base64.cxx */; };
+		506EE8912015FDE80059F3E5 /* qp.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88D2015FDE80059F3E5 /* qp.cxx */; };
+		506EE89F2015FDFF0059F3E5 /* fileop.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8932015FDFE0059F3E5 /* fileop.cxx */; };
+		506EE8A02015FDFF0059F3E5 /* file_iterator.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8942015FDFE0059F3E5 /* file_iterator.cxx */; };
+		506EE8A12015FDFF0059F3E5 /* mmfile.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8992015FDFE0059F3E5 /* mmfile.cxx */; };
+		506EE8A22015FDFF0059F3E5 /* stdfile.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE89B2015FDFE0059F3E5 /* stdfile.cxx */; };
+		506EE8A32015FDFF0059F3E5 /* utils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE89C2015FDFF0059F3E5 /* utils.cxx */; };
+		506EE8BE2015FE260059F3E5 /* message.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8A62015FE230059F3E5 /* message.cxx */; };
+		506EE8BF2015FE260059F3E5 /* messageid.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8A82015FE230059F3E5 /* messageid.cxx */; };
+		506EE8C02015FE260059F3E5 /* mailbox.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AB2015FE240059F3E5 /* mailbox.cxx */; };
+		506EE8C12015FE260059F3E5 /* mailboxlist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AC2015FE240059F3E5 /* mailboxlist.cxx */; };
+		506EE8C22015FE260059F3E5 /* address.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AD2015FE240059F3E5 /* address.cxx */; };
+		506EE8C32015FE260059F3E5 /* addresslist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AE2015FE240059F3E5 /* addresslist.cxx */; };
+		506EE8C42015FE260059F3E5 /* header.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8B42015FE250059F3E5 /* header.cxx */; };
+		506EE8C52015FE260059F3E5 /* datetime.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8B82015FE250059F3E5 /* datetime.cxx */; };
+		506EE8C62015FE260059F3E5 /* field.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8B92015FE250059F3E5 /* field.cxx */; };
+		506EE8C72015FE260059F3E5 /* fieldvalue.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8BA2015FE250059F3E5 /* fieldvalue.cxx */; };
+		506EE8C82015FE260059F3E5 /* group.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8BB2015FE250059F3E5 /* group.cxx */; };
+		506EE8EE2015FEB00059F3E5 /* mimeversion.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8CB2015FEAB0059F3E5 /* mimeversion.cxx */; };
+		506EE8EF2015FEB00059F3E5 /* utils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8CD2015FEAB0059F3E5 /* utils.cxx */; };
+		506EE8F02015FEB00059F3E5 /* contentid.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D42015FEAC0059F3E5 /* contentid.cxx */; };
+		506EE8F12015FEB00059F3E5 /* version.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D52015FEAC0059F3E5 /* version.cxx */; };
+		506EE8F22015FEB00059F3E5 /* contentdescription.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D72015FEAC0059F3E5 /* contentdescription.cxx */; };
+		506EE8F32015FEB00059F3E5 /* contenttransferencoding.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D92015FEAC0059F3E5 /* contenttransferencoding.cxx */; };
+		506EE8F42015FEB00059F3E5 /* contentdisposition.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8DD2015FEAD0059F3E5 /* contentdisposition.cxx */; };
+		506EE8F52015FEB00059F3E5 /* header.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8DF2015FEAE0059F3E5 /* header.cxx */; };
+		506EE8F62015FEB00059F3E5 /* contenttype.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E22015FEAE0059F3E5 /* contenttype.cxx */; };
+		506EE8F72015FEB00059F3E5 /* fieldparam.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E32015FEAE0059F3E5 /* fieldparam.cxx */; };
+		506EE8F82015FEB00059F3E5 /* message.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E42015FEAE0059F3E5 /* message.cxx */; };
+		506EE8F92015FEB00059F3E5 /* strutils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E92015FEAF0059F3E5 /* strutils.cxx */; };
+		506EE8FA2015FEB00059F3E5 /* body.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EB2015FEB00059F3E5 /* body.cxx */; };
+		506EE8FB2015FEB00059F3E5 /* mimeentity.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +59,92 @@
 /* Begin PBXFileReference section */
 		506EE8742015FA180059F3E5 /* libMimetic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMimetic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		506EE8772015FA180059F3E5 /* Mimetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimetic.h; sourceTree = "<group>"; };
-		506EE8782015FA180059F3E5 /* Mimetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mimetic.m; sourceTree = "<group>"; };
+		506EE8782015FA180059F3E5 /* Mimetic.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Mimetic.mm; sourceTree = "<group>"; };
+		506EE8872015FDE70059F3E5 /* code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = code.h; sourceTree = "<group>"; };
+		506EE8882015FDE70059F3E5 /* codec_chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec_chain.h; sourceTree = "<group>"; };
+		506EE8892015FDE70059F3E5 /* codec_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec_base.h; sourceTree = "<group>"; };
+		506EE88A2015FDE70059F3E5 /* other_codecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = other_codecs.h; sourceTree = "<group>"; };
+		506EE88B2015FDE70059F3E5 /* qp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qp.h; sourceTree = "<group>"; };
+		506EE88C2015FDE70059F3E5 /* base64.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cxx; sourceTree = "<group>"; };
+		506EE88D2015FDE80059F3E5 /* qp.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qp.cxx; sourceTree = "<group>"; };
+		506EE88E2015FDE80059F3E5 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		506EE88F2015FDE80059F3E5 /* codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec.h; sourceTree = "<group>"; };
+		506EE8922015FDFD0059F3E5 /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os.h; sourceTree = "<group>"; };
+		506EE8932015FDFE0059F3E5 /* fileop.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fileop.cxx; sourceTree = "<group>"; };
+		506EE8942015FDFE0059F3E5 /* file_iterator.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_iterator.cxx; sourceTree = "<group>"; };
+		506EE8952015FDFE0059F3E5 /* stdfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdfile.h; sourceTree = "<group>"; };
+		506EE8962015FDFE0059F3E5 /* directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directory.h; sourceTree = "<group>"; };
+		506EE8972015FDFE0059F3E5 /* fileop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileop.h; sourceTree = "<group>"; };
+		506EE8982015FDFE0059F3E5 /* file_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_iterator.h; sourceTree = "<group>"; };
+		506EE8992015FDFE0059F3E5 /* mmfile.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mmfile.cxx; sourceTree = "<group>"; };
+		506EE89A2015FDFE0059F3E5 /* mmfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmfile.h; sourceTree = "<group>"; };
+		506EE89B2015FDFE0059F3E5 /* stdfile.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdfile.cxx; sourceTree = "<group>"; };
+		506EE89C2015FDFF0059F3E5 /* utils.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cxx; sourceTree = "<group>"; };
+		506EE89D2015FDFF0059F3E5 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		506EE89E2015FDFF0059F3E5 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		506EE8A42015FE110059F3E5 /* itparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itparser.h; sourceTree = "<group>"; };
+		506EE8A52015FE110059F3E5 /* itparserdecl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itparserdecl.h; sourceTree = "<group>"; };
+		506EE8A62015FE230059F3E5 /* message.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cxx; sourceTree = "<group>"; };
+		506EE8A72015FE230059F3E5 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		506EE8A82015FE230059F3E5 /* messageid.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = messageid.cxx; sourceTree = "<group>"; };
+		506EE8A92015FE230059F3E5 /* messageid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageid.h; sourceTree = "<group>"; };
+		506EE8AA2015FE240059F3E5 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		506EE8AB2015FE240059F3E5 /* mailbox.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mailbox.cxx; sourceTree = "<group>"; };
+		506EE8AC2015FE240059F3E5 /* mailboxlist.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mailboxlist.cxx; sourceTree = "<group>"; };
+		506EE8AD2015FE240059F3E5 /* address.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = address.cxx; sourceTree = "<group>"; };
+		506EE8AE2015FE240059F3E5 /* addresslist.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = addresslist.cxx; sourceTree = "<group>"; };
+		506EE8AF2015FE240059F3E5 /* mailboxlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailboxlist.h; sourceTree = "<group>"; };
+		506EE8B02015FE240059F3E5 /* datetime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datetime.h; sourceTree = "<group>"; };
+		506EE8B12015FE240059F3E5 /* address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = address.h; sourceTree = "<group>"; };
+		506EE8B22015FE240059F3E5 /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		506EE8B32015FE240059F3E5 /* fieldvalue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fieldvalue.h; sourceTree = "<group>"; };
+		506EE8B42015FE250059F3E5 /* header.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = header.cxx; sourceTree = "<group>"; };
+		506EE8B52015FE250059F3E5 /* mailbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailbox.h; sourceTree = "<group>"; };
+		506EE8B62015FE250059F3E5 /* addresslist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addresslist.h; sourceTree = "<group>"; };
+		506EE8B72015FE250059F3E5 /* rfc822.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rfc822.h; sourceTree = "<group>"; };
+		506EE8B82015FE250059F3E5 /* datetime.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = datetime.cxx; sourceTree = "<group>"; };
+		506EE8B92015FE250059F3E5 /* field.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = field.cxx; sourceTree = "<group>"; };
+		506EE8BA2015FE250059F3E5 /* fieldvalue.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fieldvalue.cxx; sourceTree = "<group>"; };
+		506EE8BB2015FE250059F3E5 /* group.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = group.cxx; sourceTree = "<group>"; };
+		506EE8BC2015FE260059F3E5 /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
+		506EE8BD2015FE260059F3E5 /* body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = body.h; sourceTree = "<group>"; };
+		506EE8C92015FEAB0059F3E5 /* body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = body.h; sourceTree = "<group>"; };
+		506EE8CA2015FEAB0059F3E5 /* contentdisposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contentdisposition.h; sourceTree = "<group>"; };
+		506EE8CB2015FEAB0059F3E5 /* mimeversion.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mimeversion.cxx; sourceTree = "<group>"; };
+		506EE8CC2015FEAB0059F3E5 /* mimeversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimeversion.h; sourceTree = "<group>"; };
+		506EE8CD2015FEAB0059F3E5 /* utils.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cxx; sourceTree = "<group>"; };
+		506EE8CE2015FEAB0059F3E5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		506EE8CF2015FEAB0059F3E5 /* fieldparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fieldparam.h; sourceTree = "<group>"; };
+		506EE8D02015FEAB0059F3E5 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		506EE8D12015FEAB0059F3E5 /* strutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strutils.h; sourceTree = "<group>"; };
+		506EE8D22015FEAC0059F3E5 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		506EE8D32015FEAC0059F3E5 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		506EE8D42015FEAC0059F3E5 /* contentid.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = contentid.cxx; sourceTree = "<group>"; };
+		506EE8D52015FEAC0059F3E5 /* version.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = version.cxx; sourceTree = "<group>"; };
+		506EE8D72015FEAC0059F3E5 /* contentdescription.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = contentdescription.cxx; sourceTree = "<group>"; };
+		506EE8D82015FEAC0059F3E5 /* circular_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circular_buffer.h; sourceTree = "<group>"; };
+		506EE8D92015FEAC0059F3E5 /* contenttransferencoding.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = contenttransferencoding.cxx; sourceTree = "<group>"; };
+		506EE8DA2015FEAD0059F3E5 /* libconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libconfig.h; sourceTree = "<group>"; };
+		506EE8DB2015FEAD0059F3E5 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		506EE8DC2015FEAD0059F3E5 /* contentdescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contentdescription.h; sourceTree = "<group>"; };
+		506EE8DD2015FEAD0059F3E5 /* contentdisposition.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = contentdisposition.cxx; sourceTree = "<group>"; };
+		506EE8DE2015FEAD0059F3E5 /* mimeentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimeentity.h; sourceTree = "<group>"; };
+		506EE8DF2015FEAE0059F3E5 /* header.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = header.cxx; sourceTree = "<group>"; };
+		506EE8E02015FEAE0059F3E5 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		506EE8E12015FEAE0059F3E5 /* mimeentitylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimeentitylist.h; sourceTree = "<group>"; };
+		506EE8E22015FEAE0059F3E5 /* contenttype.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = contenttype.cxx; sourceTree = "<group>"; };
+		506EE8E32015FEAE0059F3E5 /* fieldparam.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fieldparam.cxx; sourceTree = "<group>"; };
+		506EE8E42015FEAE0059F3E5 /* message.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cxx; sourceTree = "<group>"; };
+		506EE8E52015FEAE0059F3E5 /* contenttransferencoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contenttransferencoding.h; sourceTree = "<group>"; };
+		506EE8E62015FEAF0059F3E5 /* streambufs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streambufs.h; sourceTree = "<group>"; };
+		506EE8E72015FEAF0059F3E5 /* contentid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contentid.h; sourceTree = "<group>"; };
+		506EE8E82015FEAF0059F3E5 /* mimetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimetic.h; sourceTree = "<group>"; };
+		506EE8E92015FEAF0059F3E5 /* strutils.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strutils.cxx; sourceTree = "<group>"; };
+		506EE8EA2015FEAF0059F3E5 /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		506EE8EB2015FEB00059F3E5 /* body.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = body.cxx; sourceTree = "<group>"; };
+		506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mimeentity.cxx; sourceTree = "<group>"; };
+		506EE8ED2015FEB00059F3E5 /* contenttype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contenttype.h; sourceTree = "<group>"; };
+		50AFABA32016CDFF007157DA /* config_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_win32.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +177,135 @@
 		506EE8762015FA180059F3E5 /* Mimetic */ = {
 			isa = PBXGroup;
 			children = (
+				506EE8822015FD650059F3E5 /* mimetic */,
 				506EE8772015FA180059F3E5 /* Mimetic.h */,
-				506EE8782015FA180059F3E5 /* Mimetic.m */,
+				506EE8782015FA180059F3E5 /* Mimetic.mm */,
 			);
 			path = Mimetic;
+			sourceTree = "<group>";
+		};
+		506EE8822015FD650059F3E5 /* mimetic */ = {
+			isa = PBXGroup;
+			children = (
+				50AFABA32016CDFF007157DA /* config_win32.h */,
+				506EE8EB2015FEB00059F3E5 /* body.cxx */,
+				506EE8C92015FEAB0059F3E5 /* body.h */,
+				506EE8D82015FEAC0059F3E5 /* circular_buffer.h */,
+				506EE8CE2015FEAB0059F3E5 /* config.h */,
+				506EE8D72015FEAC0059F3E5 /* contentdescription.cxx */,
+				506EE8DC2015FEAD0059F3E5 /* contentdescription.h */,
+				506EE8DD2015FEAD0059F3E5 /* contentdisposition.cxx */,
+				506EE8CA2015FEAB0059F3E5 /* contentdisposition.h */,
+				506EE8D42015FEAC0059F3E5 /* contentid.cxx */,
+				506EE8E72015FEAF0059F3E5 /* contentid.h */,
+				506EE8D92015FEAC0059F3E5 /* contenttransferencoding.cxx */,
+				506EE8E52015FEAE0059F3E5 /* contenttransferencoding.h */,
+				506EE8E22015FEAE0059F3E5 /* contenttype.cxx */,
+				506EE8ED2015FEB00059F3E5 /* contenttype.h */,
+				506EE8E32015FEAE0059F3E5 /* fieldparam.cxx */,
+				506EE8CF2015FEAB0059F3E5 /* fieldparam.h */,
+				506EE8DF2015FEAE0059F3E5 /* header.cxx */,
+				506EE8E02015FEAE0059F3E5 /* header.h */,
+				506EE8DA2015FEAD0059F3E5 /* libconfig.h */,
+				506EE8E42015FEAE0059F3E5 /* message.cxx */,
+				506EE8D02015FEAB0059F3E5 /* message.h */,
+				506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */,
+				506EE8DE2015FEAD0059F3E5 /* mimeentity.h */,
+				506EE8E12015FEAE0059F3E5 /* mimeentitylist.h */,
+				506EE8E82015FEAF0059F3E5 /* mimetic.h */,
+				506EE8CB2015FEAB0059F3E5 /* mimeversion.cxx */,
+				506EE8CC2015FEAB0059F3E5 /* mimeversion.h */,
+				506EE8E62015FEAF0059F3E5 /* streambufs.h */,
+				506EE8E92015FEAF0059F3E5 /* strutils.cxx */,
+				506EE8D12015FEAB0059F3E5 /* strutils.h */,
+				506EE8EA2015FEAF0059F3E5 /* tokenizer.h */,
+				506EE8D22015FEAC0059F3E5 /* tree.h */,
+				506EE8CD2015FEAB0059F3E5 /* utils.cxx */,
+				506EE8DB2015FEAD0059F3E5 /* utils.h */,
+				506EE8D52015FEAC0059F3E5 /* version.cxx */,
+				506EE8D32015FEAC0059F3E5 /* version.h */,
+				506EE8832015FD850059F3E5 /* codec */,
+				506EE8842015FD8B0059F3E5 /* os */,
+				506EE8852015FD930059F3E5 /* parser */,
+				506EE8862015FD9B0059F3E5 /* rfc822 */,
+			);
+			path = mimetic;
+			sourceTree = "<group>";
+		};
+		506EE8832015FD850059F3E5 /* codec */ = {
+			isa = PBXGroup;
+			children = (
+				506EE88C2015FDE70059F3E5 /* base64.cxx */,
+				506EE88E2015FDE80059F3E5 /* base64.h */,
+				506EE8872015FDE70059F3E5 /* code.h */,
+				506EE8892015FDE70059F3E5 /* codec_base.h */,
+				506EE8882015FDE70059F3E5 /* codec_chain.h */,
+				506EE88F2015FDE80059F3E5 /* codec.h */,
+				506EE88A2015FDE70059F3E5 /* other_codecs.h */,
+				506EE88D2015FDE80059F3E5 /* qp.cxx */,
+				506EE88B2015FDE70059F3E5 /* qp.h */,
+			);
+			path = codec;
+			sourceTree = "<group>";
+		};
+		506EE8842015FD8B0059F3E5 /* os */ = {
+			isa = PBXGroup;
+			children = (
+				506EE8962015FDFE0059F3E5 /* directory.h */,
+				506EE8942015FDFE0059F3E5 /* file_iterator.cxx */,
+				506EE8982015FDFE0059F3E5 /* file_iterator.h */,
+				506EE89E2015FDFF0059F3E5 /* file.h */,
+				506EE8932015FDFE0059F3E5 /* fileop.cxx */,
+				506EE8972015FDFE0059F3E5 /* fileop.h */,
+				506EE8992015FDFE0059F3E5 /* mmfile.cxx */,
+				506EE89A2015FDFE0059F3E5 /* mmfile.h */,
+				506EE8922015FDFD0059F3E5 /* os.h */,
+				506EE89B2015FDFE0059F3E5 /* stdfile.cxx */,
+				506EE8952015FDFE0059F3E5 /* stdfile.h */,
+				506EE89C2015FDFF0059F3E5 /* utils.cxx */,
+				506EE89D2015FDFF0059F3E5 /* utils.h */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		506EE8852015FD930059F3E5 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				506EE8A42015FE110059F3E5 /* itparser.h */,
+				506EE8A52015FE110059F3E5 /* itparserdecl.h */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		506EE8862015FD9B0059F3E5 /* rfc822 */ = {
+			isa = PBXGroup;
+			children = (
+				506EE8AD2015FE240059F3E5 /* address.cxx */,
+				506EE8B12015FE240059F3E5 /* address.h */,
+				506EE8AE2015FE240059F3E5 /* addresslist.cxx */,
+				506EE8B62015FE250059F3E5 /* addresslist.h */,
+				506EE8BD2015FE260059F3E5 /* body.h */,
+				506EE8B82015FE250059F3E5 /* datetime.cxx */,
+				506EE8B02015FE240059F3E5 /* datetime.h */,
+				506EE8B92015FE250059F3E5 /* field.cxx */,
+				506EE8BC2015FE260059F3E5 /* field.h */,
+				506EE8BA2015FE250059F3E5 /* fieldvalue.cxx */,
+				506EE8B32015FE240059F3E5 /* fieldvalue.h */,
+				506EE8BB2015FE250059F3E5 /* group.cxx */,
+				506EE8B22015FE240059F3E5 /* group.h */,
+				506EE8B42015FE250059F3E5 /* header.cxx */,
+				506EE8AA2015FE240059F3E5 /* header.h */,
+				506EE8AB2015FE240059F3E5 /* mailbox.cxx */,
+				506EE8B52015FE250059F3E5 /* mailbox.h */,
+				506EE8AC2015FE240059F3E5 /* mailboxlist.cxx */,
+				506EE8AF2015FE240059F3E5 /* mailboxlist.h */,
+				506EE8A62015FE230059F3E5 /* message.cxx */,
+				506EE8A72015FE230059F3E5 /* message.h */,
+				506EE8A82015FE230059F3E5 /* messageid.cxx */,
+				506EE8A92015FE230059F3E5 /* messageid.h */,
+				506EE8B72015FE250059F3E5 /* rfc822.h */,
+			);
+			path = rfc822;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +365,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506EE8792015FA180059F3E5 /* Mimetic.m in Sources */,
+				506EE8C82015FE260059F3E5 /* group.cxx in Sources */,
+				506EE8F32015FEB00059F3E5 /* contenttransferencoding.cxx in Sources */,
+				506EE8BF2015FE260059F3E5 /* messageid.cxx in Sources */,
+				506EE8FB2015FEB00059F3E5 /* mimeentity.cxx in Sources */,
+				506EE8F52015FEB00059F3E5 /* header.cxx in Sources */,
+				506EE8F02015FEB00059F3E5 /* contentid.cxx in Sources */,
+				506EE8A22015FDFF0059F3E5 /* stdfile.cxx in Sources */,
+				506EE8F72015FEB00059F3E5 /* fieldparam.cxx in Sources */,
+				506EE8902015FDE80059F3E5 /* base64.cxx in Sources */,
+				506EE8C42015FE260059F3E5 /* header.cxx in Sources */,
+				506EE8F22015FEB00059F3E5 /* contentdescription.cxx in Sources */,
+				506EE8F62015FEB00059F3E5 /* contenttype.cxx in Sources */,
+				506EE8792015FA180059F3E5 /* Mimetic.mm in Sources */,
+				506EE8F42015FEB00059F3E5 /* contentdisposition.cxx in Sources */,
+				506EE8C22015FE260059F3E5 /* address.cxx in Sources */,
+				506EE8C12015FE260059F3E5 /* mailboxlist.cxx in Sources */,
+				506EE8C32015FE260059F3E5 /* addresslist.cxx in Sources */,
+				506EE8A32015FDFF0059F3E5 /* utils.cxx in Sources */,
+				506EE8F92015FEB00059F3E5 /* strutils.cxx in Sources */,
+				506EE8EE2015FEB00059F3E5 /* mimeversion.cxx in Sources */,
+				506EE89F2015FDFF0059F3E5 /* fileop.cxx in Sources */,
+				506EE8C62015FE260059F3E5 /* field.cxx in Sources */,
+				506EE8C52015FE260059F3E5 /* datetime.cxx in Sources */,
+				506EE8F12015FEB00059F3E5 /* version.cxx in Sources */,
+				506EE8FA2015FEB00059F3E5 /* body.cxx in Sources */,
+				506EE8C72015FE260059F3E5 /* fieldvalue.cxx in Sources */,
+				506EE8A12015FDFF0059F3E5 /* mmfile.cxx in Sources */,
+				506EE8A02015FDFF0059F3E5 /* file_iterator.cxx in Sources */,
+				506EE8912015FDE80059F3E5 /* qp.cxx in Sources */,
+				506EE8EF2015FEB00059F3E5 /* utils.cxx in Sources */,
+				506EE8BE2015FE260059F3E5 /* message.cxx in Sources */,
+				506EE8C02015FE260059F3E5 /* mailbox.cxx in Sources */,
+				506EE8F82015FEB00059F3E5 /* message.cxx in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +452,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -227,7 +502,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -239,6 +515,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				HEADER_SEARCH_PATHS = "$SRCROOT/Mimetic/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -251,6 +528,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				HEADER_SEARCH_PATHS = "$SRCROOT/Mimetic/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
