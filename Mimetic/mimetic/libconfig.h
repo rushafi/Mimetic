@@ -4,6 +4,10 @@
 
     $Id: libconfig.h,v 1.10 2009-02-16 18:08:59 tat Exp $
  ***************************************************************************/
+#ifndef HAVE_MIMETIC_CONFIG
+#define HAVE_MIMETIC_CONFIG
+#endif
+
 #ifndef _MIMETIC_LIB_CONFIG_H_
 #define _MIMETIC_LIB_CONFIG_H_
 #if defined(__unix__) || defined(__linux__) || defined(__unix) || defined(_AIX)
