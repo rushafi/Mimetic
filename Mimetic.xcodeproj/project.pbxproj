@@ -41,7 +41,19 @@
 		506EE8F92015FEB00059F3E5 /* strutils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E92015FEAF0059F3E5 /* strutils.cxx */; };
 		506EE8FA2015FEB00059F3E5 /* body.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EB2015FEB00059F3E5 /* body.cxx */; };
 		506EE8FB2015FEB00059F3E5 /* mimeentity.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */; };
+		507165B32019BB54002EB243 /* MimeticTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507165B22019BB54002EB243 /* MimeticTests.mm */; };
+		507165B52019BB54002EB243 /* libMimetic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EE8742015FA180059F3E5 /* libMimetic.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		507165B62019BB54002EB243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506EE86C2015FA180059F3E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506EE8732015FA180059F3E5;
+			remoteInfo = Mimetic;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		506EE8722015FA180059F3E5 /* CopyFiles */ = {
@@ -144,6 +156,9 @@
 		506EE8EB2015FEB00059F3E5 /* body.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = body.cxx; sourceTree = "<group>"; };
 		506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mimeentity.cxx; sourceTree = "<group>"; };
 		506EE8ED2015FEB00059F3E5 /* contenttype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contenttype.h; sourceTree = "<group>"; };
+		507165B02019BB54002EB243 /* MimeticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimeticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		507165B22019BB54002EB243 /* MimeticTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MimeticTests.mm; sourceTree = "<group>"; };
+		507165B42019BB54002EB243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50AFABA32016CDFF007157DA /* config_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_win32.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +170,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		507165AD2019BB54002EB243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507165B52019BB54002EB243 /* libMimetic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -162,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				506EE8762015FA180059F3E5 /* Mimetic */,
+				507165B12019BB54002EB243 /* MimeticTests */,
 				506EE8752015FA180059F3E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				506EE8742015FA180059F3E5 /* libMimetic.a */,
+				507165B02019BB54002EB243 /* MimeticTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,6 +333,15 @@
 			path = rfc822;
 			sourceTree = "<group>";
 		};
+		507165B12019BB54002EB243 /* MimeticTests */ = {
+			isa = PBXGroup;
+			children = (
+				507165B22019BB54002EB243 /* MimeticTests.mm */,
+				507165B42019BB54002EB243 /* Info.plist */,
+			);
+			path = MimeticTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,6 +362,24 @@
 			productReference = 506EE8742015FA180059F3E5 /* libMimetic.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		507165AF2019BB54002EB243 /* MimeticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507165BA2019BB54002EB243 /* Build configuration list for PBXNativeTarget "MimeticTests" */;
+			buildPhases = (
+				507165AC2019BB54002EB243 /* Sources */,
+				507165AD2019BB54002EB243 /* Frameworks */,
+				507165AE2019BB54002EB243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				507165B72019BB54002EB243 /* PBXTargetDependency */,
+			);
+			name = MimeticTests;
+			productName = MimeticTests;
+			productReference = 507165B02019BB54002EB243 /* MimeticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,6 +390,10 @@
 				ORGANIZATIONNAME = mblsft;
 				TargetAttributes = {
 					506EE8732015FA180059F3E5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					507165AF2019BB54002EB243 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -356,9 +412,20 @@
 			projectRoot = "";
 			targets = (
 				506EE8732015FA180059F3E5 /* Mimetic */,
+				507165AF2019BB54002EB243 /* MimeticTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		507165AE2019BB54002EB243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		506EE8702015FA180059F3E5 /* Sources */ = {
@@ -401,7 +468,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		507165AC2019BB54002EB243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507165B32019BB54002EB243 /* MimeticTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		507165B72019BB54002EB243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506EE8732015FA180059F3E5 /* Mimetic */;
+			targetProxy = 507165B62019BB54002EB243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		506EE87B2015FA180059F3E5 /* Debug */ = {
@@ -536,6 +619,34 @@
 			};
 			name = Release;
 		};
+		507165B82019BB54002EB243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				INFOPLIST_FILE = MimeticTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		507165B92019BB54002EB243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				INFOPLIST_FILE = MimeticTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +664,15 @@
 			buildConfigurations = (
 				506EE87E2015FA180059F3E5 /* Debug */,
 				506EE87F2015FA180059F3E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507165BA2019BB54002EB243 /* Build configuration list for PBXNativeTarget "MimeticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507165B82019BB54002EB243 /* Debug */,
+				507165B92019BB54002EB243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
