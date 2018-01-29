@@ -36,6 +36,10 @@
 ehthumbs.db
 Thumbs.db
 
+# Local configuration files #
+######################
+*.xcuserdatad
+
 # videos #
 ######################
 screencast
