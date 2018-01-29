@@ -677,7 +677,7 @@ private:
         // if we don't have any boundary copy until m_eit and return
         if(m_boundaryList.empty())
         {
-            onBlock(m_bit, m_eit-m_bit, pe);
+            onBlock(m_bit, (int)(m_eit-m_bit), pe);
             m_bit = m_eit;
             return;
         }
@@ -723,10 +723,10 @@ private:
                     else if(isnl(a))
                         block_sz--;
                 }
-                onBlock(base, block_sz, pe);
+                onBlock(base, (int)block_sz, pe);
                 return;
             } else {
-                onBlock(m_bit, m_eit-m_bit, pe);
+                onBlock(m_bit, (int)(m_eit-m_bit), pe);
                 m_bit = m_eit;
             }
         }
