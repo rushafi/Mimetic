@@ -7,7 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <Mimetic/Mimetic.h>
+#import <Mimetic/_MimeEntity.h>
+#import <Mimetic/_Mailbox.h>
+#import <Mimetic/_Group.h>
 
 @interface MimeticTests : XCTestCase
 
@@ -54,45 +56,56 @@
 }
 
 - (void)testParsing {
-	Mimetic *mimetic = [[Mimetic alloc] initWithMime:[_mimeMessage dataUsingEncoding:NSUTF8StringEncoding]];
+	_MimeEntity *mimetic = [[_MimeEntity alloc] initWithMimeString:_mimeMessage];
+	
+	_Mailbox *from = [[_Mailbox alloc] initWithString: _from];
+	_Mailbox *to = [[_Mailbox alloc] initWithString: _to];
 	
 	XCTAssertTrue([mimetic.contentType isEqualToString:_contentType]);
 	XCTAssertTrue([mimetic.contentTransferEncoding isEqualToString:_contentTransferEncoding]);
-	XCTAssertTrue([mimetic.from isEqualToString:_from]);
-	XCTAssertTrue([mimetic.to isEqualToString:_to]);
+	XCTAssertTrue([mimetic.from isEqual:from]);
+	XCTAssertTrue([mimetic.to containsObject:to]);
 	XCTAssertTrue([mimetic.date isEqualToDate:_date]);
 	XCTAssertTrue([mimetic.version isEqualToString:_mimeVersion]);
 	XCTAssertTrue([mimetic.messageId isEqualToString:_messageId]);
 	XCTAssertTrue([mimetic.contentLanguage isEqualToString:_contentLanguage]);
+	
 	XCTAssertTrue([mimetic.subject isEqualToString:_subject]);
 	XCTAssertTrue([mimetic.body isEqualToString:_body]);
 }
 
 - (void)testMimeBuilding {
-	Mimetic *mimetic = [[Mimetic alloc] init];
+	_MimeEntity *mimetic = [[_MimeEntity alloc] init];
 	
-	[mimetic setContentType:_contentType];
-	[mimetic setContentTransferEncoding:_contentTransferEncoding];
-	[mimetic setFrom:_from];
-	[mimetic setTo:_to];
-	[mimetic setDate:_date];
-	[mimetic setVersion:_mimeVersion];
-	[mimetic setMessageId:_messageId];
-	[mimetic setContentLanguage:_contentLanguage];
-	[mimetic setSubject:_subject];
-	[mimetic setBody:_body];
+	mimetic.contentType = _contentType;
+	mimetic.contentTransferEncoding = _contentTransferEncoding;
+	
+	_Mailbox *from = [[_Mailbox alloc] initWithString: _from];
+	mimetic.from = from;
+	
+	_Mailbox *to = [[_Mailbox alloc] initWithString: _to];
+	[mimetic.to addObject:to];
+	
+	mimetic.date = _date;
+	mimetic.version = _mimeVersion;
+	mimetic.messageId = _messageId;
+	mimetic.contentLanguage = _contentLanguage;
+	mimetic.subject = _subject;
+	mimetic.body = _body;
+	
+	NSLog(@"%@", [mimetic description]);
 
-	XCTAssertTrue([mimetic hasField:@"Content-Type"]);
-	XCTAssertTrue([mimetic hasField:@"Content-Transfer-Encoding"]);
-	XCTAssertTrue([mimetic hasField:@"From"]);
-	XCTAssertTrue([mimetic hasField:@"To"]);
-	XCTAssertTrue([mimetic hasField:@"Date"]);
-	XCTAssertTrue([mimetic hasField:@"Mime-Version"]);
-	XCTAssertTrue([mimetic hasField:@"Message-ID"]);
-	XCTAssertTrue([mimetic hasField:@"Content-Language"]);
-	XCTAssertTrue([mimetic hasField:@"Subject"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Content-Type"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Content-Transfer-Encoding"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"From"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"To"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Date"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Mime-Version"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Message-ID"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Content-Language"]);
+	XCTAssertTrue([mimetic hasHeaderField:@"Subject"]);
 	
-	XCTAssertNotNil([mimetic mime]);
+	XCTAssertNotNil([mimetic description]);
 }
 
 @end

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		506EE8792015FA180059F3E5 /* Mimetic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8782015FA180059F3E5 /* Mimetic.mm */; };
-		506EE87A2015FA180059F3E5 /* Mimetic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 506EE8772015FA180059F3E5 /* Mimetic.h */; };
+		506EE8792015FA180059F3E5 /* _MimeEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8782015FA180059F3E5 /* _MimeEntity.mm */; };
+		506EE87A2015FA180059F3E5 /* _MimeEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 506EE8772015FA180059F3E5 /* _MimeEntity.h */; };
 		506EE8902015FDE80059F3E5 /* base64.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88C2015FDE70059F3E5 /* base64.cxx */; };
 		506EE8912015FDE80059F3E5 /* qp.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88D2015FDE80059F3E5 /* qp.cxx */; };
 		506EE89F2015FDFF0059F3E5 /* fileop.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8932015FDFE0059F3E5 /* fileop.cxx */; };
@@ -43,6 +43,10 @@
 		506EE8FB2015FEB00059F3E5 /* mimeentity.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */; };
 		507165B32019BB54002EB243 /* MimeticTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507165B22019BB54002EB243 /* MimeticTests.mm */; };
 		507165B52019BB54002EB243 /* libMimetic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EE8742015FA180059F3E5 /* libMimetic.a */; };
+		507165C520205173002EB243 /* _Mailbox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507165C420205173002EB243 /* _Mailbox.mm */; };
+		507165C8202051B7002EB243 /* _Group.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507165C7202051B7002EB243 /* _Group.mm */; };
+		50ED202A2032EE1600C5ED14 /* _Mailbox.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 507165C320205173002EB243 /* _Mailbox.h */; };
+		50ED202B2032EE1B00C5ED14 /* _Group.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 507165C6202051B7002EB243 /* _Group.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +66,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				506EE87A2015FA180059F3E5 /* Mimetic.h in CopyFiles */,
+				50ED202B2032EE1B00C5ED14 /* _Group.h in CopyFiles */,
+				50ED202A2032EE1600C5ED14 /* _Mailbox.h in CopyFiles */,
+				506EE87A2015FA180059F3E5 /* _MimeEntity.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +76,8 @@
 
 /* Begin PBXFileReference section */
 		506EE8742015FA180059F3E5 /* libMimetic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMimetic.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		506EE8772015FA180059F3E5 /* Mimetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimetic.h; sourceTree = "<group>"; };
-		506EE8782015FA180059F3E5 /* Mimetic.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Mimetic.mm; sourceTree = "<group>"; };
+		506EE8772015FA180059F3E5 /* _MimeEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MimeEntity.h; sourceTree = "<group>"; };
+		506EE8782015FA180059F3E5 /* _MimeEntity.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = _MimeEntity.mm; sourceTree = "<group>"; };
 		506EE8872015FDE70059F3E5 /* code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = code.h; sourceTree = "<group>"; };
 		506EE8882015FDE70059F3E5 /* codec_chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec_chain.h; sourceTree = "<group>"; };
 		506EE8892015FDE70059F3E5 /* codec_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec_base.h; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 		507165B02019BB54002EB243 /* MimeticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimeticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		507165B22019BB54002EB243 /* MimeticTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MimeticTests.mm; sourceTree = "<group>"; };
 		507165B42019BB54002EB243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507165C320205173002EB243 /* _Mailbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _Mailbox.h; sourceTree = "<group>"; };
+		507165C420205173002EB243 /* _Mailbox.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = _Mailbox.mm; sourceTree = "<group>"; };
+		507165C6202051B7002EB243 /* _Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _Group.h; sourceTree = "<group>"; };
+		507165C7202051B7002EB243 /* _Group.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = _Group.mm; sourceTree = "<group>"; };
 		50AFABA32016CDFF007157DA /* config_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_win32.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,8 +213,12 @@
 			isa = PBXGroup;
 			children = (
 				506EE8822015FD650059F3E5 /* mimetic */,
-				506EE8772015FA180059F3E5 /* Mimetic.h */,
-				506EE8782015FA180059F3E5 /* Mimetic.mm */,
+				507165C6202051B7002EB243 /* _Group.h */,
+				507165C7202051B7002EB243 /* _Group.mm */,
+				507165C320205173002EB243 /* _Mailbox.h */,
+				507165C420205173002EB243 /* _Mailbox.mm */,
+				506EE8772015FA180059F3E5 /* _MimeEntity.h */,
+				506EE8782015FA180059F3E5 /* _MimeEntity.mm */,
 			);
 			path = Mimetic;
 			sourceTree = "<group>";
@@ -435,6 +449,7 @@
 				506EE8C82015FE260059F3E5 /* group.cxx in Sources */,
 				506EE8F32015FEB00059F3E5 /* contenttransferencoding.cxx in Sources */,
 				506EE8BF2015FE260059F3E5 /* messageid.cxx in Sources */,
+				507165C8202051B7002EB243 /* _Group.mm in Sources */,
 				506EE8FB2015FEB00059F3E5 /* mimeentity.cxx in Sources */,
 				506EE8F52015FEB00059F3E5 /* header.cxx in Sources */,
 				506EE8F02015FEB00059F3E5 /* contentid.cxx in Sources */,
@@ -444,7 +459,8 @@
 				506EE8C42015FE260059F3E5 /* header.cxx in Sources */,
 				506EE8F22015FEB00059F3E5 /* contentdescription.cxx in Sources */,
 				506EE8F62015FEB00059F3E5 /* contenttype.cxx in Sources */,
-				506EE8792015FA180059F3E5 /* Mimetic.mm in Sources */,
+				507165C520205173002EB243 /* _Mailbox.mm in Sources */,
+				506EE8792015FA180059F3E5 /* _MimeEntity.mm in Sources */,
 				506EE8F42015FEB00059F3E5 /* contentdisposition.cxx in Sources */,
 				506EE8C22015FE260059F3E5 /* address.cxx in Sources */,
 				506EE8C12015FE260059F3E5 /* mailboxlist.cxx in Sources */,
