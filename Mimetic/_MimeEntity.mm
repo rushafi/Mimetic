@@ -88,7 +88,7 @@ struct _opaque_mime_entity {
 }
 
 - (id)initWithMimeData:(NSData *)data {
-	NSString *mime = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+	NSString *mime = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	return [self initWithMimeString:mime];
 }
 
@@ -220,7 +220,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for MessageId
 
 - (NSString *)getMessageId {
-	return [NSString stringWithCString:mimetic->me.header().messageid().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().messageid().str().c_str()];
 }
 
 - (void)setMessageId:(NSString *)messageId {
@@ -230,7 +230,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for MIME version
 
 - (NSString *)getVersion {
-	return [NSString stringWithCString:mimetic->me.header().mimeVersion().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().mimeVersion().str().c_str()];
 }
 
 - (void)setVersion:(NSString *)version {
@@ -257,7 +257,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for Content Type
 
 - (NSString *)getContentType {
-	return [NSString stringWithCString:mimetic->me.header().contentType().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().contentType().str().c_str()];
 }
 
 - (void)setContentType:(NSString *)contentType {
@@ -267,7 +267,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for Content Transfer Encoding
 
 - (NSString *)getContentTransferEncoding {
-	return [NSString stringWithCString:mimetic->me.header().contentTransferEncoding().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().contentTransferEncoding().str().c_str()];
 }
 
 - (void)setContentTransferEncoding:(NSString *)contentTransferEncoding {
@@ -277,7 +277,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for Content Disposition
 
 - (NSString *)getContentDisposition {
-	return [NSString stringWithCString:mimetic->me.header().contentDisposition().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().contentDisposition().str().c_str()];
 }
 
 - (void)setContentDisposition:(NSString *)contentDisposition {
@@ -287,7 +287,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for Content Description
 
 - (NSString *)getContentDescription {
-	return [NSString stringWithCString:mimetic->me.header().contentDescription().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().contentDescription().str().c_str()];
 }
 
 - (void)setContentDescription:(NSString *)contentDescription {
@@ -297,7 +297,7 @@ struct _opaque_mime_entity {
 // Getter & Setter for Content ID
 
 - (NSString *)getContentId {
-	return [NSString stringWithCString:mimetic->me.header().contentId().str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:mimetic->me.header().contentId().str().c_str()];
 }
 
 - (void)setContentId:(NSString *)contentId {
@@ -399,7 +399,7 @@ struct _opaque_mime_entity {
 	stringstream s;
 	s << mimetic->me;
 	
-	return [NSString stringWithCString:s.str().c_str() encoding:NSASCIIStringEncoding];
+	return [NSString stringWithUTF8String:s.str().c_str()];
 }
 
 @end
