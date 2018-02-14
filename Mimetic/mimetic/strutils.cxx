@@ -25,7 +25,7 @@ string canonical(const string& s, bool no_ws)
     if(idx)
         input.erase(0, idx);
     // removes trailing spaces
-    idx = (int)input.length() - 1;
+    idx = static_cast<int>(input.length() - 1);
     while(input[idx] == ' ')
         idx--;
 	++idx;
@@ -33,7 +33,7 @@ string canonical(const string& s, bool no_ws)
     // removes rfc822 comments and non-required spaces
     bool in_dquote = false, has_brack = false;
 	int in_par = 0, in_brack = 0, par_last = 0;
-    for(int t = (int)input.length() - 1; t >= 0; --t)
+    for(int t = static_cast<int>(input.length() - 1); t >= 0; --t)
     {
         if(input[t] == '"') {
             in_dquote = !in_dquote;

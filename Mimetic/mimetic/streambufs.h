@@ -102,7 +102,7 @@ struct transform_streambuf: public std::streambuf
     }
     int sync()
     {
-        int toSend = (int)(pptr() - pbase());
+        int toSend = static_cast<int>(pptr() - pbase());
         if(toSend)
         {
             write(pbase(), pbase() + toSend);
@@ -129,7 +129,7 @@ struct count_streambuf: public transform_streambuf
     }
     void write(const char_type* beg, const char_type* end)
     {
-        int toSend = (int)(end - beg);
+        int toSend = static_cast<int>(end - beg);
         if(toSend)
             m_count += toSend;
     }

@@ -75,9 +75,9 @@ uint StdFile::read(char* buf, int bufsz)
     int r;
     do
     {
-        r = (int)::read(m_fd, buf, bufsz);
+		r = static_cast<int>(::read(m_fd, buf, bufsz));
     } while(r < 0 && errno == EINTR);
-    return (uint)r;
+    return static_cast<uint>(r);
 }
 
 StdFile::operator bool() const

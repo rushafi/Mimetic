@@ -155,13 +155,13 @@ protected:
             return m_lastBoundary = NoBoundary;
 
         int level = 0; // multipart nesting level
-        int lineLen = (int)line.length();
+        int lineLen = static_cast<int>(line.length());
         BoundaryList::const_iterator bit,eit;
         bit = m_boundaryList.begin(), eit = m_boundaryList.end();
         for(;bit != eit; ++bit, ++level)
         {
             const std::string& b = *bit;
-            int bLen = (int)b.length();
+            int bLen = static_cast<int>(b.length());
             if(line.compare(0, bLen, b) == 0)
             { 
                 // not the expected boundary, malformed msg
@@ -205,7 +205,7 @@ protected:
         {
             // allocate and init buffer
             char* tmp = buf;
-            int oldBufsz = (int)bufsz;
+            int oldBufsz = static_cast<int>(bufsz);
             while(pos >= bufsz)
                 bufsz = bufsz + alloc_block;
             buf = new char[bufsz+1];    
@@ -322,7 +322,7 @@ protected:
                     {
                         /* "FIELDNAME BLANK+ c" found, consider that the first 
                            body line */
-                        onBlock(name, (int)nPos, peBody);
+                        onBlock(name, static_cast<int>(nPos), peBody);
                         goto out;
                     }
                     append(name, nBufSz, c, nPos);
@@ -350,7 +350,7 @@ protected:
                 } else {
                     /* bad header line or blank line between header and body is
                        missing; consider we're in the first line of the body */
-                    onBlock(name, (int)nPos, peBody);
+                    onBlock(name, static_cast<int>(nPos), peBody);
                     goto out;
                 }
                 break;
@@ -493,13 +493,13 @@ protected:
                     // can't be a boundary and flush the buf
                     // with the partial line
                     block[blkpos] = 0;
-                    onBlock(block, (int)blkpos, pe);
+                    onBlock(block, static_cast<int>(blkpos), pe);
                     blkpos = sl_off = 0;
                 } else {
                     // flush the buffer except the last
                     // (probably incomplete) line
                     size_t llen = blkpos - sl_off;
-                    onBlock(block, (int)sl_off, pe);
+                    onBlock(block, static_cast<int>(sl_off), pe);
                     memmove(block, block + sl_off, llen);
                     sl_off = 0;
                     blkpos = llen;
@@ -536,7 +536,7 @@ protected:
                             // trim last newline
                             if (sl_off>=2) 
                             {
-                                int i = (int)sl_off;
+                                int i = static_cast<int>(sl_off);
                                 char a = block[--i];
                                 char b = block[--i];
 
@@ -563,7 +563,7 @@ protected:
                                 break;
                         if(i==eomsz) // if eom found
                         {
-                            onBlock(block, (int)sl_off, pe);
+                            onBlock(block, static_cast<int>(sl_off), pe);
                             return; 
                         }
                     }
@@ -582,7 +582,7 @@ protected:
         }
         // eof
         block[blkpos] = 0;
-        onBlock(block, (int)blkpos, pe);
+        onBlock(block, static_cast<int>(blkpos), pe);
     }
 };
 
@@ -677,7 +677,7 @@ private:
         // if we don't have any boundary copy until m_eit and return
         if(m_boundaryList.empty())
         {
-            onBlock(m_bit, (int)(m_eit-m_bit), pe);
+            onBlock(m_bit, static_cast<int>(m_eit-m_bit), pe);
             m_bit = m_eit;
             return;
         }
@@ -723,10 +723,10 @@ private:
                     else if(isnl(a))
                         block_sz--;
                 }
-                onBlock(base, (int)block_sz, pe);
+                onBlock(base, static_cast<int>(block_sz), pe);
                 return;
             } else {
-                onBlock(m_bit, (int)(m_eit-m_bit), pe);
+                onBlock(m_bit, static_cast<int>(m_eit-m_bit), pe);
                 m_bit = m_eit;
             }
         }
