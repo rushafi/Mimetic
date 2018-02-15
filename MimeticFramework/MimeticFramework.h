@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Mimetic/_MimeEntity.h>
+#import <Mimetic/_Mailbox.h>
+#import <Mimetic/_Group.h>
 
 //! Project version number for MimeticFramework.
 FOUNDATION_EXPORT double MimeticFrameworkVersionNumber;
