@@ -7,6 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502A3578203569D9008AD910 /* MimeticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502A356F203569D8008AD910 /* MimeticFramework.framework */; };
+		502A357D203569D9008AD910 /* MimeticFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A357C203569D9008AD910 /* MimeticFrameworkTests.m */; };
+		502A357F203569D9008AD910 /* MimeticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 502A3571203569D8008AD910 /* MimeticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502A358620356A06008AD910 /* body.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EB2015FEB00059F3E5 /* body.cxx */; };
+		502A358720356A06008AD910 /* contentdescription.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D72015FEAC0059F3E5 /* contentdescription.cxx */; };
+		502A358820356A06008AD910 /* contentdisposition.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8DD2015FEAD0059F3E5 /* contentdisposition.cxx */; };
+		502A358920356A06008AD910 /* contentid.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D42015FEAC0059F3E5 /* contentid.cxx */; };
+		502A358A20356A06008AD910 /* contenttransferencoding.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D92015FEAC0059F3E5 /* contenttransferencoding.cxx */; };
+		502A358B20356A06008AD910 /* contenttype.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E22015FEAE0059F3E5 /* contenttype.cxx */; };
+		502A358C20356A06008AD910 /* fieldparam.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E32015FEAE0059F3E5 /* fieldparam.cxx */; };
+		502A358D20356A06008AD910 /* header.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8DF2015FEAE0059F3E5 /* header.cxx */; };
+		502A358E20356A06008AD910 /* message.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E42015FEAE0059F3E5 /* message.cxx */; };
+		502A358F20356A06008AD910 /* mimeentity.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EC2015FEB00059F3E5 /* mimeentity.cxx */; };
+		502A359020356A06008AD910 /* mimeversion.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8CB2015FEAB0059F3E5 /* mimeversion.cxx */; };
+		502A359120356A06008AD910 /* strutils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8E92015FEAF0059F3E5 /* strutils.cxx */; };
+		502A359220356A06008AD910 /* utils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8CD2015FEAB0059F3E5 /* utils.cxx */; };
+		502A359320356A06008AD910 /* version.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D52015FEAC0059F3E5 /* version.cxx */; };
+		502A359420356A0E008AD910 /* base64.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88C2015FDE70059F3E5 /* base64.cxx */; };
+		502A359520356A0E008AD910 /* qp.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88D2015FDE80059F3E5 /* qp.cxx */; };
+		502A359620356A15008AD910 /* file_iterator.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8942015FDFE0059F3E5 /* file_iterator.cxx */; };
+		502A359720356A15008AD910 /* fileop.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8932015FDFE0059F3E5 /* fileop.cxx */; };
+		502A359820356A15008AD910 /* mmfile.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8992015FDFE0059F3E5 /* mmfile.cxx */; };
+		502A359920356A15008AD910 /* stdfile.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE89B2015FDFE0059F3E5 /* stdfile.cxx */; };
+		502A359A20356A15008AD910 /* utils.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE89C2015FDFF0059F3E5 /* utils.cxx */; };
+		502A359B20356A26008AD910 /* address.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AD2015FE240059F3E5 /* address.cxx */; };
+		502A359C20356A26008AD910 /* addresslist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AE2015FE240059F3E5 /* addresslist.cxx */; };
+		502A359D20356A26008AD910 /* datetime.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8B82015FE250059F3E5 /* datetime.cxx */; };
+		502A359E20356A26008AD910 /* field.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8B92015FE250059F3E5 /* field.cxx */; };
+		502A359F20356A26008AD910 /* fieldvalue.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8BA2015FE250059F3E5 /* fieldvalue.cxx */; };
+		502A35A020356A26008AD910 /* group.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8BB2015FE250059F3E5 /* group.cxx */; };
+		502A35A120356A26008AD910 /* header.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8B42015FE250059F3E5 /* header.cxx */; };
+		502A35A220356A26008AD910 /* mailbox.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AB2015FE240059F3E5 /* mailbox.cxx */; };
+		502A35A320356A26008AD910 /* mailboxlist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8AC2015FE240059F3E5 /* mailboxlist.cxx */; };
+		502A35A420356A26008AD910 /* message.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8A62015FE230059F3E5 /* message.cxx */; };
+		502A35A520356A26008AD910 /* messageid.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8A82015FE230059F3E5 /* messageid.cxx */; };
+		502A35A620356A41008AD910 /* _Group.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507165C7202051B7002EB243 /* _Group.mm */; };
+		502A35A720356A41008AD910 /* _Mailbox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507165C420205173002EB243 /* _Mailbox.mm */; };
+		502A35A820356A41008AD910 /* _MimeEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8782015FA180059F3E5 /* _MimeEntity.mm */; };
+		502A35A920356A67008AD910 /* _Group.h in Headers */ = {isa = PBXBuildFile; fileRef = 507165C6202051B7002EB243 /* _Group.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502A35AA20356A67008AD910 /* _Mailbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 507165C320205173002EB243 /* _Mailbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502A35AB20356A67008AD910 /* _MimeEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8772015FA180059F3E5 /* _MimeEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5039816D20356AEA00A2ACFC /* config_win32.h in Headers */ = {isa = PBXBuildFile; fileRef = 50AFABA32016CDFF007157DA /* config_win32.h */; };
+		5039816E20356AEA00A2ACFC /* body.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8C92015FEAB0059F3E5 /* body.h */; };
+		5039816F20356AEA00A2ACFC /* circular_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8D82015FEAC0059F3E5 /* circular_buffer.h */; };
+		5039817020356AEA00A2ACFC /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8CE2015FEAB0059F3E5 /* config.h */; };
+		5039817120356AEA00A2ACFC /* contentdescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8DC2015FEAD0059F3E5 /* contentdescription.h */; };
+		5039817220356AEA00A2ACFC /* contentdisposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8CA2015FEAB0059F3E5 /* contentdisposition.h */; };
+		5039817320356AEA00A2ACFC /* contentid.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8E72015FEAF0059F3E5 /* contentid.h */; };
+		5039817420356AEA00A2ACFC /* contenttransferencoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8E52015FEAE0059F3E5 /* contenttransferencoding.h */; };
+		5039817520356AEA00A2ACFC /* contenttype.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8ED2015FEB00059F3E5 /* contenttype.h */; };
+		5039817620356AEA00A2ACFC /* fieldparam.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8CF2015FEAB0059F3E5 /* fieldparam.h */; };
+		5039817720356AEA00A2ACFC /* header.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8E02015FEAE0059F3E5 /* header.h */; };
+		5039817820356AEA00A2ACFC /* libconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8DA2015FEAD0059F3E5 /* libconfig.h */; };
+		5039817920356AEA00A2ACFC /* message.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8D02015FEAB0059F3E5 /* message.h */; };
+		5039817A20356AEA00A2ACFC /* mimeentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8DE2015FEAD0059F3E5 /* mimeentity.h */; };
+		5039817B20356AEA00A2ACFC /* mimeentitylist.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8E12015FEAE0059F3E5 /* mimeentitylist.h */; };
+		5039817C20356AEA00A2ACFC /* mimetic.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8E82015FEAF0059F3E5 /* mimetic.h */; };
+		5039817D20356AEA00A2ACFC /* mimeversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8CC2015FEAB0059F3E5 /* mimeversion.h */; };
+		5039817E20356AEA00A2ACFC /* streambufs.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8E62015FEAF0059F3E5 /* streambufs.h */; };
+		5039817F20356AEA00A2ACFC /* strutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8D12015FEAB0059F3E5 /* strutils.h */; };
+		5039818020356AEA00A2ACFC /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8EA2015FEAF0059F3E5 /* tokenizer.h */; };
+		5039818120356AEA00A2ACFC /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8D22015FEAC0059F3E5 /* tree.h */; };
+		5039818220356AEA00A2ACFC /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8DB2015FEAD0059F3E5 /* utils.h */; };
+		5039818320356AEA00A2ACFC /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8D32015FEAC0059F3E5 /* version.h */; };
+		5039818420356AF200A2ACFC /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE88E2015FDE80059F3E5 /* base64.h */; };
+		5039818520356AF200A2ACFC /* code.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8872015FDE70059F3E5 /* code.h */; };
+		5039818620356AF200A2ACFC /* codec_base.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8892015FDE70059F3E5 /* codec_base.h */; };
+		5039818720356AF200A2ACFC /* codec_chain.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8882015FDE70059F3E5 /* codec_chain.h */; };
+		5039818820356AF200A2ACFC /* codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE88F2015FDE80059F3E5 /* codec.h */; };
+		5039818920356AF200A2ACFC /* other_codecs.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE88A2015FDE70059F3E5 /* other_codecs.h */; };
+		5039818A20356AF200A2ACFC /* qp.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE88B2015FDE70059F3E5 /* qp.h */; };
+		5039818B20356AF900A2ACFC /* directory.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8962015FDFE0059F3E5 /* directory.h */; };
+		5039818C20356AF900A2ACFC /* file_iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8982015FDFE0059F3E5 /* file_iterator.h */; };
+		5039818D20356AF900A2ACFC /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE89E2015FDFF0059F3E5 /* file.h */; };
+		5039818E20356AF900A2ACFC /* fileop.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8972015FDFE0059F3E5 /* fileop.h */; };
+		5039818F20356AF900A2ACFC /* mmfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE89A2015FDFE0059F3E5 /* mmfile.h */; };
+		5039819020356AF900A2ACFC /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8922015FDFD0059F3E5 /* os.h */; };
+		5039819120356AF900A2ACFC /* stdfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8952015FDFE0059F3E5 /* stdfile.h */; };
+		5039819220356AF900A2ACFC /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE89D2015FDFF0059F3E5 /* utils.h */; };
+		5039819320356AFF00A2ACFC /* itparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8A42015FE110059F3E5 /* itparser.h */; };
+		5039819420356AFF00A2ACFC /* itparserdecl.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8A52015FE110059F3E5 /* itparserdecl.h */; };
+		5039819520356B0800A2ACFC /* address.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B12015FE240059F3E5 /* address.h */; };
+		5039819620356B0800A2ACFC /* addresslist.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B62015FE250059F3E5 /* addresslist.h */; };
+		5039819720356B0800A2ACFC /* body.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8BD2015FE260059F3E5 /* body.h */; };
+		5039819820356B0800A2ACFC /* datetime.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B02015FE240059F3E5 /* datetime.h */; };
+		5039819920356B0800A2ACFC /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8BC2015FE260059F3E5 /* field.h */; };
+		5039819A20356B0800A2ACFC /* fieldvalue.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B32015FE240059F3E5 /* fieldvalue.h */; };
+		5039819B20356B0800A2ACFC /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B22015FE240059F3E5 /* group.h */; };
+		5039819C20356B0800A2ACFC /* header.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8AA2015FE240059F3E5 /* header.h */; };
+		5039819D20356B0800A2ACFC /* mailbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B52015FE250059F3E5 /* mailbox.h */; };
+		5039819E20356B0800A2ACFC /* mailboxlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8AF2015FE240059F3E5 /* mailboxlist.h */; };
+		5039819F20356B0800A2ACFC /* message.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8A72015FE230059F3E5 /* message.h */; };
+		503981A020356B0800A2ACFC /* messageid.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8A92015FE230059F3E5 /* messageid.h */; };
+		503981A120356B0800A2ACFC /* rfc822.h in Headers */ = {isa = PBXBuildFile; fileRef = 506EE8B72015FE250059F3E5 /* rfc822.h */; };
 		506EE8792015FA180059F3E5 /* _MimeEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8782015FA180059F3E5 /* _MimeEntity.mm */; };
 		506EE87A2015FA180059F3E5 /* _MimeEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 506EE8772015FA180059F3E5 /* _MimeEntity.h */; };
 		506EE8902015FDE80059F3E5 /* base64.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE88C2015FDE70059F3E5 /* base64.cxx */; };
@@ -50,6 +144,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		502A3579203569D9008AD910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506EE86C2015FA180059F3E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502A356E203569D8008AD910;
+			remoteInfo = MimeticFramework;
+		};
 		507165B62019BB54002EB243 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 506EE86C2015FA180059F3E5 /* Project object */;
@@ -75,6 +176,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		502A356F203569D8008AD910 /* MimeticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MimeticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502A3571203569D8008AD910 /* MimeticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MimeticFramework.h; sourceTree = "<group>"; };
+		502A3572203569D8008AD910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502A3577203569D9008AD910 /* MimeticFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimeticFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502A357C203569D9008AD910 /* MimeticFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MimeticFrameworkTests.m; sourceTree = "<group>"; };
+		502A357E203569D9008AD910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506EE8742015FA180059F3E5 /* libMimetic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMimetic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		506EE8772015FA180059F3E5 /* _MimeEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MimeEntity.h; sourceTree = "<group>"; };
 		506EE8782015FA180059F3E5 /* _MimeEntity.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = _MimeEntity.mm; sourceTree = "<group>"; };
@@ -173,6 +280,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		502A356B203569D8008AD910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A3574203569D9008AD910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A3578203569D9008AD910 /* MimeticFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		506EE8712015FA180059F3E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,11 +313,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502A3570203569D8008AD910 /* MimeticFramework */ = {
+			isa = PBXGroup;
+			children = (
+				502A3571203569D8008AD910 /* MimeticFramework.h */,
+				502A3572203569D8008AD910 /* Info.plist */,
+			);
+			path = MimeticFramework;
+			sourceTree = "<group>";
+		};
+		502A357B203569D9008AD910 /* MimeticFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				502A357C203569D9008AD910 /* MimeticFrameworkTests.m */,
+				502A357E203569D9008AD910 /* Info.plist */,
+			);
+			path = MimeticFrameworkTests;
+			sourceTree = "<group>";
+		};
 		506EE86B2015FA180059F3E5 = {
 			isa = PBXGroup;
 			children = (
 				506EE8762015FA180059F3E5 /* Mimetic */,
 				507165B12019BB54002EB243 /* MimeticTests */,
+				502A3570203569D8008AD910 /* MimeticFramework */,
+				502A357B203569D9008AD910 /* MimeticFrameworkTests */,
 				506EE8752015FA180059F3E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,6 +347,8 @@
 			children = (
 				506EE8742015FA180059F3E5 /* libMimetic.a */,
 				507165B02019BB54002EB243 /* MimeticTests.xctest */,
+				502A356F203569D8008AD910 /* MimeticFramework.framework */,
+				502A3577203569D9008AD910 /* MimeticFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,7 +502,110 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		502A356C203569D8008AD910 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A357F203569D9008AD910 /* MimeticFramework.h in Headers */,
+				502A35A920356A67008AD910 /* _Group.h in Headers */,
+				502A35AA20356A67008AD910 /* _Mailbox.h in Headers */,
+				502A35AB20356A67008AD910 /* _MimeEntity.h in Headers */,
+				5039819520356B0800A2ACFC /* address.h in Headers */,
+				5039819620356B0800A2ACFC /* addresslist.h in Headers */,
+				5039819720356B0800A2ACFC /* body.h in Headers */,
+				5039819820356B0800A2ACFC /* datetime.h in Headers */,
+				5039819920356B0800A2ACFC /* field.h in Headers */,
+				5039819A20356B0800A2ACFC /* fieldvalue.h in Headers */,
+				5039819B20356B0800A2ACFC /* group.h in Headers */,
+				5039819C20356B0800A2ACFC /* header.h in Headers */,
+				5039819D20356B0800A2ACFC /* mailbox.h in Headers */,
+				5039819E20356B0800A2ACFC /* mailboxlist.h in Headers */,
+				5039819F20356B0800A2ACFC /* message.h in Headers */,
+				503981A020356B0800A2ACFC /* messageid.h in Headers */,
+				503981A120356B0800A2ACFC /* rfc822.h in Headers */,
+				5039819320356AFF00A2ACFC /* itparser.h in Headers */,
+				5039819420356AFF00A2ACFC /* itparserdecl.h in Headers */,
+				5039818B20356AF900A2ACFC /* directory.h in Headers */,
+				5039818C20356AF900A2ACFC /* file_iterator.h in Headers */,
+				5039818D20356AF900A2ACFC /* file.h in Headers */,
+				5039818E20356AF900A2ACFC /* fileop.h in Headers */,
+				5039818F20356AF900A2ACFC /* mmfile.h in Headers */,
+				5039819020356AF900A2ACFC /* os.h in Headers */,
+				5039819120356AF900A2ACFC /* stdfile.h in Headers */,
+				5039819220356AF900A2ACFC /* utils.h in Headers */,
+				5039818420356AF200A2ACFC /* base64.h in Headers */,
+				5039818520356AF200A2ACFC /* code.h in Headers */,
+				5039818620356AF200A2ACFC /* codec_base.h in Headers */,
+				5039818720356AF200A2ACFC /* codec_chain.h in Headers */,
+				5039818820356AF200A2ACFC /* codec.h in Headers */,
+				5039818920356AF200A2ACFC /* other_codecs.h in Headers */,
+				5039818A20356AF200A2ACFC /* qp.h in Headers */,
+				5039816D20356AEA00A2ACFC /* config_win32.h in Headers */,
+				5039816E20356AEA00A2ACFC /* body.h in Headers */,
+				5039816F20356AEA00A2ACFC /* circular_buffer.h in Headers */,
+				5039817020356AEA00A2ACFC /* config.h in Headers */,
+				5039817120356AEA00A2ACFC /* contentdescription.h in Headers */,
+				5039817220356AEA00A2ACFC /* contentdisposition.h in Headers */,
+				5039817320356AEA00A2ACFC /* contentid.h in Headers */,
+				5039817420356AEA00A2ACFC /* contenttransferencoding.h in Headers */,
+				5039817520356AEA00A2ACFC /* contenttype.h in Headers */,
+				5039817620356AEA00A2ACFC /* fieldparam.h in Headers */,
+				5039817720356AEA00A2ACFC /* header.h in Headers */,
+				5039817820356AEA00A2ACFC /* libconfig.h in Headers */,
+				5039817920356AEA00A2ACFC /* message.h in Headers */,
+				5039817A20356AEA00A2ACFC /* mimeentity.h in Headers */,
+				5039817B20356AEA00A2ACFC /* mimeentitylist.h in Headers */,
+				5039817C20356AEA00A2ACFC /* mimetic.h in Headers */,
+				5039817D20356AEA00A2ACFC /* mimeversion.h in Headers */,
+				5039817E20356AEA00A2ACFC /* streambufs.h in Headers */,
+				5039817F20356AEA00A2ACFC /* strutils.h in Headers */,
+				5039818020356AEA00A2ACFC /* tokenizer.h in Headers */,
+				5039818120356AEA00A2ACFC /* tree.h in Headers */,
+				5039818220356AEA00A2ACFC /* utils.h in Headers */,
+				5039818320356AEA00A2ACFC /* version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		502A356E203569D8008AD910 /* MimeticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502A3580203569D9008AD910 /* Build configuration list for PBXNativeTarget "MimeticFramework" */;
+			buildPhases = (
+				502A356A203569D8008AD910 /* Sources */,
+				502A356B203569D8008AD910 /* Frameworks */,
+				502A356C203569D8008AD910 /* Headers */,
+				502A356D203569D8008AD910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MimeticFramework;
+			productName = MimeticFramework;
+			productReference = 502A356F203569D8008AD910 /* MimeticFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		502A3576203569D9008AD910 /* MimeticFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502A3583203569D9008AD910 /* Build configuration list for PBXNativeTarget "MimeticFrameworkTests" */;
+			buildPhases = (
+				502A3573203569D9008AD910 /* Sources */,
+				502A3574203569D9008AD910 /* Frameworks */,
+				502A3575203569D9008AD910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502A357A203569D9008AD910 /* PBXTargetDependency */,
+			);
+			name = MimeticFrameworkTests;
+			productName = MimeticFrameworkTests;
+			productReference = 502A3577203569D9008AD910 /* MimeticFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		506EE8732015FA180059F3E5 /* Mimetic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 506EE87D2015FA180059F3E5 /* Build configuration list for PBXNativeTarget "Mimetic" */;
@@ -403,6 +650,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = mblsft;
 				TargetAttributes = {
+					502A356E203569D8008AD910 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					502A3576203569D9008AD910 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					506EE8732015FA180059F3E5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -427,11 +682,27 @@
 			targets = (
 				506EE8732015FA180059F3E5 /* Mimetic */,
 				507165AF2019BB54002EB243 /* MimeticTests */,
+				502A356E203569D8008AD910 /* MimeticFramework */,
+				502A3576203569D9008AD910 /* MimeticFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		502A356D203569D8008AD910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A3575203569D9008AD910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		507165AE2019BB54002EB243 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +713,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		502A356A203569D8008AD910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A35A620356A41008AD910 /* _Group.mm in Sources */,
+				502A35A720356A41008AD910 /* _Mailbox.mm in Sources */,
+				502A35A820356A41008AD910 /* _MimeEntity.mm in Sources */,
+				502A359B20356A26008AD910 /* address.cxx in Sources */,
+				502A359C20356A26008AD910 /* addresslist.cxx in Sources */,
+				502A359D20356A26008AD910 /* datetime.cxx in Sources */,
+				502A359E20356A26008AD910 /* field.cxx in Sources */,
+				502A359F20356A26008AD910 /* fieldvalue.cxx in Sources */,
+				502A35A020356A26008AD910 /* group.cxx in Sources */,
+				502A35A120356A26008AD910 /* header.cxx in Sources */,
+				502A35A220356A26008AD910 /* mailbox.cxx in Sources */,
+				502A35A320356A26008AD910 /* mailboxlist.cxx in Sources */,
+				502A35A420356A26008AD910 /* message.cxx in Sources */,
+				502A35A520356A26008AD910 /* messageid.cxx in Sources */,
+				502A359620356A15008AD910 /* file_iterator.cxx in Sources */,
+				502A359720356A15008AD910 /* fileop.cxx in Sources */,
+				502A359820356A15008AD910 /* mmfile.cxx in Sources */,
+				502A359920356A15008AD910 /* stdfile.cxx in Sources */,
+				502A359A20356A15008AD910 /* utils.cxx in Sources */,
+				502A359420356A0E008AD910 /* base64.cxx in Sources */,
+				502A359520356A0E008AD910 /* qp.cxx in Sources */,
+				502A358620356A06008AD910 /* body.cxx in Sources */,
+				502A358720356A06008AD910 /* contentdescription.cxx in Sources */,
+				502A358820356A06008AD910 /* contentdisposition.cxx in Sources */,
+				502A358920356A06008AD910 /* contentid.cxx in Sources */,
+				502A358A20356A06008AD910 /* contenttransferencoding.cxx in Sources */,
+				502A358B20356A06008AD910 /* contenttype.cxx in Sources */,
+				502A358C20356A06008AD910 /* fieldparam.cxx in Sources */,
+				502A358D20356A06008AD910 /* header.cxx in Sources */,
+				502A358E20356A06008AD910 /* message.cxx in Sources */,
+				502A358F20356A06008AD910 /* mimeentity.cxx in Sources */,
+				502A359020356A06008AD910 /* mimeversion.cxx in Sources */,
+				502A359120356A06008AD910 /* strutils.cxx in Sources */,
+				502A359220356A06008AD910 /* utils.cxx in Sources */,
+				502A359320356A06008AD910 /* version.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A3573203569D9008AD910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A357D203569D9008AD910 /* MimeticFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		506EE8702015FA180059F3E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +816,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		502A357A203569D9008AD910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 502A356E203569D8008AD910 /* MimeticFramework */;
+			targetProxy = 502A3579203569D9008AD910 /* PBXContainerItemProxy */;
+		};
 		507165B72019BB54002EB243 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 506EE8732015FA180059F3E5 /* Mimetic */;
@@ -503,6 +829,84 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		502A3581203569D9008AD910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$SRCROOT/Mimetic/**";
+				INFOPLIST_FILE = MimeticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		502A3582203569D9008AD910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$SRCROOT/Mimetic/**";
+				INFOPLIST_FILE = MimeticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		502A3584203569D9008AD910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				INFOPLIST_FILE = MimeticFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		502A3585203569D9008AD910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VYCDE7MP8;
+				INFOPLIST_FILE = MimeticFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		506EE87B2015FA180059F3E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -666,6 +1070,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		502A3580203569D9008AD910 /* Build configuration list for PBXNativeTarget "MimeticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502A3581203569D9008AD910 /* Debug */,
+				502A3582203569D9008AD910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502A3583203569D9008AD910 /* Build configuration list for PBXNativeTarget "MimeticFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502A3584203569D9008AD910 /* Debug */,
+				502A3585203569D9008AD910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		506EE86F2015FA180059F3E5 /* Build configuration list for PBXProject "Mimetic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
