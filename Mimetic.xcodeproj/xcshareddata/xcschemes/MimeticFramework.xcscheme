@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "502A356E203569D8008AD910"
-               BuildableName = "MimeticFramework.framework"
+               BuildableName = "Mimetic-iOS.framework"
                BlueprintName = "MimeticFramework"
                ReferencedContainer = "container:Mimetic.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "502A356E203569D8008AD910"
-            BuildableName = "MimeticFramework.framework"
+            BuildableName = "Mimetic-iOS.framework"
             BlueprintName = "MimeticFramework"
             ReferencedContainer = "container:Mimetic.xcodeproj">
          </BuildableReference>
@@ -67,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "502A356E203569D8008AD910"
-            BuildableName = "MimeticFramework.framework"
+            BuildableName = "Mimetic-iOS.framework"
             BlueprintName = "MimeticFramework"
             ReferencedContainer = "container:Mimetic.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "502A356E203569D8008AD910"
-            BuildableName = "MimeticFramework.framework"
+            BuildableName = "Mimetic-iOS.framework"
             BlueprintName = "MimeticFramework"
             ReferencedContainer = "container:Mimetic.xcodeproj">
          </BuildableReference>

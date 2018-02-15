@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		502A3578203569D9008AD910 /* Mimetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502A356F203569D8008AD910 /* Mimetic.framework */; };
+		502A3578203569D9008AD910 /* MimeticIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502A356F203569D8008AD910 /* MimeticIOS.framework */; };
 		502A357D203569D9008AD910 /* MimeticFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A357C203569D9008AD910 /* MimeticFrameworkTests.m */; };
 		502A357F203569D9008AD910 /* MimeticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 502A3571203569D8008AD910 /* MimeticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502A358620356A06008AD910 /* body.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EB2015FEB00059F3E5 /* body.cxx */; };
@@ -176,7 +176,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		502A356F203569D8008AD910 /* Mimetic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimetic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502A356F203569D8008AD910 /* MimeticIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MimeticIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		502A3571203569D8008AD910 /* MimeticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MimeticFramework.h; sourceTree = "<group>"; };
 		502A3572203569D8008AD910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		502A3577203569D9008AD910 /* MimeticFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimeticFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,7 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				502A3578203569D9008AD910 /* Mimetic.framework in Frameworks */,
+				502A3578203569D9008AD910 /* MimeticIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 			children = (
 				506EE8742015FA180059F3E5 /* libMimetic.a */,
 				507165B02019BB54002EB243 /* MimeticTests.xctest */,
-				502A356F203569D8008AD910 /* Mimetic.framework */,
+				502A356F203569D8008AD910 /* MimeticIOS.framework */,
 				502A3577203569D9008AD910 /* MimeticFrameworkTests.xctest */,
 			);
 			name = Products;
@@ -585,7 +585,7 @@
 			);
 			name = MimeticFramework;
 			productName = MimeticFramework;
-			productReference = 502A356F203569D8008AD910 /* Mimetic.framework */;
+			productReference = 502A356F203569D8008AD910 /* MimeticIOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		502A3576203569D9008AD910 /* MimeticFrameworkTests */ = {
@@ -843,10 +843,10 @@
 				HEADER_SEARCH_PATHS = "$SRCROOT/Mimetic/**";
 				INFOPLIST_FILE = MimeticFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticFramework;
-				PRODUCT_NAME = Mimetic;
+				PRODUCT_NAME = MimeticIOS;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -868,10 +868,10 @@
 				HEADER_SEARCH_PATHS = "$SRCROOT/Mimetic/**";
 				INFOPLIST_FILE = MimeticFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = company.MimeticFramework;
-				PRODUCT_NAME = Mimetic;
+				PRODUCT_NAME = MimeticIOS;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
