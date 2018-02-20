@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		502A3578203569D9008AD910 /* MimeticIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502A356F203569D8008AD910 /* MimeticIOS.framework */; };
 		502A357D203569D9008AD910 /* MimeticFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A357C203569D9008AD910 /* MimeticFrameworkTests.m */; };
-		502A357F203569D9008AD910 /* MimeticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 502A3571203569D8008AD910 /* MimeticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502A357F203569D9008AD910 /* MimeticIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 502A3571203569D8008AD910 /* MimeticIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502A358620356A06008AD910 /* body.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8EB2015FEB00059F3E5 /* body.cxx */; };
 		502A358720356A06008AD910 /* contentdescription.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8D72015FEAC0059F3E5 /* contentdescription.cxx */; };
 		502A358820356A06008AD910 /* contentdisposition.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 506EE8DD2015FEAD0059F3E5 /* contentdisposition.cxx */; };
@@ -177,7 +177,7 @@
 
 /* Begin PBXFileReference section */
 		502A356F203569D8008AD910 /* MimeticIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MimeticIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		502A3571203569D8008AD910 /* MimeticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MimeticFramework.h; sourceTree = "<group>"; };
+		502A3571203569D8008AD910 /* MimeticIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MimeticIOS.h; sourceTree = "<group>"; };
 		502A3572203569D8008AD910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		502A3577203569D9008AD910 /* MimeticFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimeticFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		502A357C203569D9008AD910 /* MimeticFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MimeticFrameworkTests.m; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 		502A3570203569D8008AD910 /* MimeticFramework */ = {
 			isa = PBXGroup;
 			children = (
-				502A3571203569D8008AD910 /* MimeticFramework.h */,
+				502A3571203569D8008AD910 /* MimeticIOS.h */,
 				502A3572203569D8008AD910 /* Info.plist */,
 			);
 			path = MimeticFramework;
@@ -507,7 +507,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				502A357F203569D9008AD910 /* MimeticFramework.h in Headers */,
+				502A357F203569D9008AD910 /* MimeticIOS.h in Headers */,
 				502A35A920356A67008AD910 /* _Group.h in Headers */,
 				502A35AA20356A67008AD910 /* _Mailbox.h in Headers */,
 				502A35AB20356A67008AD910 /* _MimeEntity.h in Headers */,
